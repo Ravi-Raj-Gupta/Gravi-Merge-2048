@@ -3,7 +3,7 @@ export const GRID_WIDTH = 6;
 export const GRID_HEIGHT = 10;
 export const SPAWN_VALUES = [2, 4, 8, 16];
 export const EMISSARY_CHANCE = 0.05; // 1 in 20
-export const MERGE_THRESHOLD = 2048; // Treasury win condition
+export const MERGE_THRESHOLD = 512; // Treasury win condition
 
 // Stone types
 export const STONE_TYPES = {
