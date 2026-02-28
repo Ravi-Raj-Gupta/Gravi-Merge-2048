@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* Smooth scrolling */
+html {
+   scroll-behavior: smooth;
+}
+
+* {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default button styles */
+button {
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+   background: rgba(100, 116, 139, 0.5);
+   border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: rgba(100, 116, 139, 0.8);
+}
+
+/* Neon glow effect utility */
+.neon-glow {
+   box-shadow: 0 0 10px rgba(34, 197, 194, 0.5), 0 0 20px rgba(34, 197, 194, 0.3);
+}
+
+/* Smooth transitions */
+.transition-smooth {
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animation for tile movement */
+@keyframes tileSlide {
+   from {
+      opacity: 0.8;
+      transform: scale(0.95);
+   }
+
+   to {
+      opacity: 1;
+      transform: scale(1);
+   }
+}
+
+/* Responsive font sizing */
+@media (max-width: 640px) {
+   h1 {
+      font-size: 2rem !important;
+   }
+
+   h2 {
+      font-size: 1.5rem !important;
+   }
+}
